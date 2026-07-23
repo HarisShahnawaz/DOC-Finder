@@ -1,8 +1,9 @@
 import React from 'react'
 import { Routes , Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import Doctor from './pages/Doctors'
+import Doctors from './pages/Doctors'
 import MyProfile from './pages/MyProfile'
 import Login from './pages/Login'
 import MyAppointments from './pages/MyAppointments'
@@ -10,6 +11,7 @@ import Appointment from './pages/Appointment'
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
+      <Navbar />
      <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/doctors' element={<Doctors />} />

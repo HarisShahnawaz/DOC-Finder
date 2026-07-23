@@ -1,0 +1,11 @@
+import React from 'react'
+import {assets} from '../assets/assets_frontend/assets'
+const Navbar = () => {
+  return (
+    <div>
+        <img src={assets.logo} alt="logo" />
+    </div>
+  )
+}
+
+export default Navbar
