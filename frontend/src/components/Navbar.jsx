@@ -8,19 +8,19 @@ const Navbar = () => {
         <ul className='hidden md:flex items-start gap-5 font-medium'>
          <NavLink>
           <li className='py-1'>Home</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto' />
+          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
          </NavLink>
           <NavLink>
           <li className='py-1'>All Doctors</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto' />
+          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
          </NavLink>
           <NavLink>
           <li className='py-1'>About</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto' />
+          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
          </NavLink>
           <NavLink>
           <li className='py-1'>Contact</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto' />
+          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
          </NavLink>
          
         </ul>
