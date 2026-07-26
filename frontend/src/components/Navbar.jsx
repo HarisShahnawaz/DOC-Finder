@@ -38,9 +38,9 @@ const Navbar = () => {
               <img className='w-2.5' src={assets.dropdown_icon} alt="" />
               <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
                 <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
-                  <p onClick={() => navigate('/myprofile')} className='cursor-pointer hover:text-black'>My Profile</p>
-                  <p onClick={() => navigate('/myappointments')} className='cursor-pointer hover:text-black'>My Appointments</p>
-                  <p onClick={() => navigate('/login')} className='cursor-pointer hover:text-black'>Logout</p>
+                  <p onClick={() => navigate('/my-profile')} className='cursor-pointer hover:text-black'>My Profile</p>
+                  <p onClick={() => navigate('/my-appointments')} className='cursor-pointer hover:text-black'>My Appointments</p>
+                  <p onClick={()=> setToken(false)}  className='cursor-pointer hover:text-black'>Logout</p>
                 </div>
               </div>
             </div> :  <button onClick={() => navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block '>Create Account</button>
