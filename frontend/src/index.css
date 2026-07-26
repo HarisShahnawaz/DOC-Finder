@@ -3,6 +3,9 @@
 @theme {
   --color-primary: #5f6fff; 
 }
+@gridTemplateColumns {
+  --grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
 .active hr{
   @apply block
 }
