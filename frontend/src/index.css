@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #5f6fff; 
+  --color-primary: #5f6fff;
+  --grid-template-columns-auto: repeat(auto-fill, minmax(150px, 1fr));
 }
-@gridTemplateColumns {
-  --grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+.active hr {
+  @apply block;
 }
-.active hr{
-  @apply block
-}
-::-webkit-scrollbar{
-  @apply hidden
+
+::-webkit-scrollbar {
+  @apply hidden;
 }
