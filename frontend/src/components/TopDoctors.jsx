@@ -1,5 +1,4 @@
 import React from 'react'
-import { doctors } from '../assets/assets_frontend/assets'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import { useContext } from 'react'
@@ -12,7 +11,7 @@ const TopDoctors = () => {
         <p className='sm:w-1/3 text-center text-sm'>Simply browse through our extensive list of doctors.</p>
         <div className='w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0'>
             {doctors.slice(0, 10).map((item, index) => (
-                <div onClick={() => navigate(`/appointment/${item._id}`)} className='border border-blue-200 overflow-hidden rounded-xl cursor-pointer hover:translate-y-2.5 transition-all duration-500' key={index}>
+                <div onClick={() => navigate(`/appointments/${item._id}`)} className='border border-blue-200 overflow-hidden rounded-xl cursor-pointer hover:translate-y-2.5 transition-all duration-500' key={index}>
                     <img className='bg-blue-50 ' src={item.image} alt="" />
                     <div className='p-4'>
                         <div className='flex items-center text-sm gap-2 text-center text-green-500'>
