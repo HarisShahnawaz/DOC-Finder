@@ -21,11 +21,17 @@ const Appointment = () => {
 
   return docInfo ? (
     <div>
+      {/*------- Doctor Details--------- */}
       <div>
         <div>
           <img src={docInfo.image} alt="" />
         </div>
-      </div>
+      
+        <div>
+           {/*-------- Doctor Information --------- */}
+           <p></p>
+        </div>
+      </div>  
     </div>
   ) : null
 }
