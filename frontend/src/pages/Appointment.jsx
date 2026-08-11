@@ -33,7 +33,7 @@ const Appointment = () => {
       currentDate.setDate(today.getDate() + i)
 
       //setting endtime of the date with index
-      let endTime = new Date()
+      let endTime = new Date(today)
       endTime.setDate(today.getDate() + i)
       endTime.setHours(21, 0, 0, 0)
       //setting hours
@@ -71,11 +71,6 @@ const Appointment = () => {
     getAvailableSlots()
   },[docInfo])
 
-  useEffect(() => {
-    console.log(docSlots);
-    
-  },[docSlots])
-
   return docInfo ? (
     <div>
       {/*------- Doctor Details--------- */}
@@ -106,8 +101,12 @@ const Appointment = () => {
        <p>Booking Slots</p>
        <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
         {
-          docSlots.length && docSlots.map((item,index)=>(
-             <div key={index} className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? "bg-primary text-white" : "border border-gray-200"} `}>
+          docSlots.length > 0 && docSlots.map((item,index)=>(
+             <div
+               onClick={() => setSlotIndex(index)}
+               key={index}
+               className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? "bg-primary text-white" : "border border-gray-200"}`}
+             >
               <p>{item[0] && daysOfWeek[item[0].datetime.getDay()]}</p>
               <p>{item[0] && item[0].datetime.getDate()}</p>
 
