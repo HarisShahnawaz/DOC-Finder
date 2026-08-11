@@ -8,6 +8,8 @@ const Appointment = () => {
 
   const { docId } = useParams()
   const { doctors , currencySymbol } = useContext(AppContext)
+  const daysOfWeek = [ 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun' ]
+
 
   const [docInfo, setDocInfo] = useState(null)
   const [docSlots, setDocSlots] = useState([])
