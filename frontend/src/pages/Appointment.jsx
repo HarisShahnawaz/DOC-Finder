@@ -28,7 +28,7 @@ const Appointment = () => {
      let today = new Date()
 
      for (let i = 0; i < 7; i++) {
-      //getting date with index jj kk
+      //getting date with index
       let currentDate = new Date(today)
       currentDate.setDate(today.getDate() + i)
 
@@ -58,7 +58,10 @@ const Appointment = () => {
         //incrementing time by 30 minutes
         currentDate.setMinutes(currentDate.getMinutes() + 30)
       }
-      setDocSlots(prev => [...prev, timeSlots])
+
+      if(timeSlots.length > 0){
+        setDocSlots(prev => [...prev, timeSlots])
+      }
      }
 
   }
@@ -121,5 +124,3 @@ const Appointment = () => {
 }
 
 export default Appointment
-
-
