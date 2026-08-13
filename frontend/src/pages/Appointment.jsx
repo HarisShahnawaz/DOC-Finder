@@ -114,10 +114,19 @@ const Appointment = () => {
               <p>{item[0] && item[0].datetime.getDate()}</p>
 
              </div>
+
           ))
         }
 
        </div>
+        <div>
+          {docSlots.length && docSlots[slotIndex].map((slot, index) => (
+           <p key={index}>
+            {slot.time.toLowerCase()}
+           </p>
+          ))}
+        </div> 
+
       </div>
     </div>
   ) : null
