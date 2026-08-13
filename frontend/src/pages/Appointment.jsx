@@ -119,10 +119,10 @@ const Appointment = () => {
         }
 
        </div>
-        <div>
-          {docSlots.length && docSlots[slotIndex].map((slot, index) => (
-           <p key={index}>
-            {slot.time.toLowerCase()}
+        <div className='flex gap-3 items-center  overflow-x-scroll mt-4'>
+          {docSlots.length && docSlots[slotIndex].map((item, index) => (
+           <p className={`text-sm font-light shrink-0 px-5  py-2 rounded-full cursor-pointer ${item.time === slotTime ? "bg-primary text-white" : " text-gray-400 border border-gray-200"}`} key={index}>
+            {item.time.toLowerCase()}
            </p>
           ))}
         </div> 
