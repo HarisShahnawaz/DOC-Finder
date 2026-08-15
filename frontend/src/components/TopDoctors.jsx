@@ -32,4 +32,3 @@ const TopDoctors = () => {
 }
 
 export default TopDoctors
-//test
