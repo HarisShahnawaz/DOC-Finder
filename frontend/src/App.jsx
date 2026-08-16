@@ -9,6 +9,7 @@ import Login from './pages/Login'
 import MyAppointments from './pages/MyAppointments'
 import Appointment from './pages/Appointment'
 import Footer from './components/Footer'
+import About from './pages/About'
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
@@ -19,6 +20,7 @@ const App = () => {
       <Route path='/doctors/:speciality' element={<Doctors />} />
         <Route path='/login' element={<Login />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/about' element={<About />} />
       <Route path='/myprofile' element={<MyProfile />} />
       <Route path='/myappointments' element={<MyAppointments />} />
       <Route path='/appointments/:docId' element={<Appointment/>} />
