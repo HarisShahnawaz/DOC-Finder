@@ -2,7 +2,10 @@ import React from 'react'
 
 const MyProfile = () => {
   return (
-    <div>MyProfile</div>
+    <div>
+      <h1>My Profile</h1>
+      <p>This is the profile page for the logged-in user.</p>
+    </div>
   )
 }
 
