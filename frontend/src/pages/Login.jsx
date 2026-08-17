@@ -32,9 +32,9 @@ const Login = () => {
         </div>
 
         <button className='bg-primary text-white w-full py-2 rounded-md text-base' type="submit">{state === "Sign up" ? "Create Account" : "Login"}</button>
-        {
-          state === "Sign up" ?
-            <p className='text-sm'>Already have an account? <span onClick={() => setState("Login")} className='text-primary cursor-pointer'>Login here</span></p> : <p className='text-sm'>Don't have an account? <span onClick={() => setState("Sign up")} className='text-primary cursor-pointer'>Sign up</span></p>
+        {state === "Sign up"
+          ? <p>Already have an account? <span onClick={() => setState('Login')} className='text-primary underline cursor-pointer'>Login here</span></p>
+          : <p>Create an new account? <span onClick={() => setState('Sign up')} className='text-primary underline cursor-pointer'> Click here</span></p>
         }
       </div>
     </form>
