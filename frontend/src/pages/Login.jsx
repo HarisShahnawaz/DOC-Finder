@@ -18,10 +18,14 @@ const Login = () => {
       <div className='flex flex-col gap-3  sm:min-w-85 m-auto items-start p-8  border text-zinc-600 text-sm rounded-lg shadow-lg'>
         <p className='text-2xl font-semibold'>{state === 'Sign up' ? 'Create Account' : 'Login'}</p>
         <p>Please {state === 'Sign up' ? 'sign up' : 'log in'} to book appointments</p>
-        <div className='w-full'>
-          <p>Full Name</p>
-          <input className='border border-zinc-300 rounded w-full p-2 mt-1 ' type="text" onClick={(e) => setName(e.target.name)} value={name} required />
-        </div>
+        {
+          state === "Sign up" &&
+          <div className='w-full'>
+            <p>Full Name</p>
+            <input className='border border-zinc-300 rounded w-full p-2 mt-1 ' type="text" onClick={(e) => setName(e.target.name)} value={name} required />
+          </div>
+        }
+
         <div className='w-full'>
           <p>Email</p>
           <input className='border border-zinc-300 rounded w-full p-2 mt-1 ' type="email" onClick={(e) => setEmail(e.target.name)} value={name} required />
