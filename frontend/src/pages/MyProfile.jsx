@@ -40,7 +40,7 @@ const MyProfile = () => {
               ? <input type='text' value={userData.phone} onChange={e => setUserData(prev => ({ ...prev, phone: e.target.value }))} />
               : <p>{userData.phone}</p>
           }
-          <p>addressss</p>
+          <p>addressssss</p>
 
 
         </div>
