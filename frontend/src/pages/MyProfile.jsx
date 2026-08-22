@@ -10,7 +10,7 @@ const MyProfile = () => {
     email: 'edward.vinston@example.com',
     phone: '+1 234 567 890',
     address: {
-      line1: '123 Main Street, ',
+      line1: "123 Main Street,",
       line2: "circle church road london"
     },
     gender: 'Male',
@@ -45,9 +45,9 @@ const MyProfile = () => {
           {
             isEdit
               ? <p>
-                <input onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line1: e.target.value } }))} value={userData.value.line1} type="text" />
+                <input onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line1: e.target.value } }))} value={userData.address.line1} type="text" />
                 <br />
-                <input onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line2: e.target.value } }))} value={userData.value.line2} type="text" />
+                <input onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line2: e.target.value } }))} value={userData.address.line2} type="text" />
               </p>
               : <p>
                 {userData.address.line1}
@@ -61,7 +61,7 @@ const MyProfile = () => {
 
       </div>
       <div>
-        <p>BASIC INFORMATION</p>\
+        <p>BASIC INFORMATION</p>
         <div>
           <p>Gender:</p>
           {
@@ -79,6 +79,14 @@ const MyProfile = () => {
               : <p>{userData.dob}</p>
           }
         </div>
+      </div>
+
+      <div>
+        {
+          isEdit
+            ? <button onClick={() => setIsEdit(false)}>Save Information</button>
+            : <button onClick={() => setIsEdit(true)}>Edit</button>
+        }
       </div>
     </div>
   )
