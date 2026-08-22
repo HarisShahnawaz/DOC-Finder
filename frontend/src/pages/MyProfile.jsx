@@ -66,11 +66,17 @@ const MyProfile = () => {
           <p>Gender:</p>
           {
             isEdit
-              ? <select>
+              ? <select onChange={(e) => setUserData(prev => ({ ...prev, gender: e.target.value }))} value={userData.gender}>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
-              : <p>{userData.name}</p>
+              : <p>{userData.gender}</p>
+          }
+          <p>Birthday:</p>
+          {
+            isEdit
+              ? <input type="date" onChange={(e) => setUserData(prev => ({ ...prev, dob: e.target.value }))} value={userData.dob} />
+              : <p>{userData.dob}</p>
           }
         </div>
       </div>
