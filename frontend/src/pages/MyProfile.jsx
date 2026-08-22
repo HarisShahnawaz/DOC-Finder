@@ -40,7 +40,20 @@ const MyProfile = () => {
               ? <input type='text' value={userData.phone} onChange={e => setUserData(prev => ({ ...prev, phone: e.target.value }))} />
               : <p>{userData.phone}</p>
           }
-          <p>addressssss</p>
+          <p>address</p>
+          {
+            isEdit
+              ? <p>
+                <input type="text" />
+                <br />
+                <input type="text" />
+              </p>
+              : <p>
+                {userData.address.line1}
+                <br />
+                {userData.address.line2}
+              </p>
+          }
 
 
         </div>
@@ -51,4 +64,3 @@ const MyProfile = () => {
 }
 
 export default MyProfile
-//this is test
