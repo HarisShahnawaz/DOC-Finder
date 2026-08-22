@@ -28,7 +28,7 @@ const MyProfile = () => {
           ? <input className='bg-gray-50 text-3xl font-medium max-w-60 mt-4' type='text' value={userData.name} onChange={e => setUserData(prev => ({ ...prev, name: e.target.value }))} />
           : <p className='font-medium text-3xl text-neutral-800 mt-4'>{userData.name}</p>
       }
-      <hr className='bg-zinc-400 h-[1px] border-none' />
+      <hr className='bg-zinc-400 h-px border-none' />
 
       <div>
         <p className='text-neutral-500 underline mt-3 '>CONTACT INFORMATION</p>
