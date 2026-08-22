@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { assets } from '../assets/assets_frontend/assets'
+
 const MyProfile = () => {
 
   const [userData, setUserData] = useState({
@@ -44,9 +45,9 @@ const MyProfile = () => {
           {
             isEdit
               ? <p>
-                <input type="text" />
+                <input onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line1: e.target.value } }))} value={userData.value.line1} type="text" />
                 <br />
-                <input type="text" />
+                <input onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line2: e.target.value } }))} value={userData.value.line2} type="text" />
               </p>
               : <p>
                 {userData.address.line1}
@@ -58,6 +59,20 @@ const MyProfile = () => {
 
         </div>
 
+      </div>
+      <div>
+        <p>BASIC INFORMATION</p>\
+        <div>
+          <p>Gender:</p>
+          {
+            isEdit
+              ? <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              : <p>{userData.name}</p>
+          }
+        </div>
       </div>
     </div>
   )
