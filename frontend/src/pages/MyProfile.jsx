@@ -16,7 +16,7 @@ const MyProfile = () => {
     gender: 'Male',
     dob: '2002-1-2'
   })
-
+  //tart
   const [isEdit, setIsEdit] = useState(false)
   return (
     <div className='max-w-lg flex flex-col gap-2 text-sm'>
@@ -93,4 +93,4 @@ const MyProfile = () => {
 }
 
 export default MyProfile
-//this is test        jjjjj 
+
