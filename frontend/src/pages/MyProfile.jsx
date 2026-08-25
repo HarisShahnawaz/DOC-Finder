@@ -84,7 +84,7 @@ const MyProfile = () => {
       <div>
         {
           isEdit
-            ? <button onClick={() => setIsEdit(false)}>Save Information</button>
+            ? <button onClick={() => setIsEdit(false)}>Save  All Information</button>
             : <button onClick={() => setIsEdit(true)}>Edit</button>
         }
       </div>
