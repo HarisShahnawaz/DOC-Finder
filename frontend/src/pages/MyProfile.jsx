@@ -14,9 +14,9 @@ const MyProfile = () => {
       line2: "circle church road london"
     },
     gender: 'Male',
-    dob: '2002-1-2'
+    dob: '2004-3-2'
   })
-  //tart
+
   const [isEdit, setIsEdit] = useState(false)
   return (
     <div className='max-w-lg flex flex-col gap-2 text-sm'>
