@@ -6,7 +6,7 @@ const MyAppointments = () => {
   const { doctors } = useContext(AppContext)
   return (
     <div>
-      <p>My Appointments</p>
+      <p className='pb-3 mt-12 font-medium text-zinc-700 border-b'>My Appointments</p>
       <div>
         {
           doctors.slice(0, 2).map((item, index) => (
@@ -23,6 +23,10 @@ const MyAppointments = () => {
                 <p><span>Date & Time: </span>25, July, 2024 | 8 : 30 pm</p>
               </div>
               <div></div>
+              <div>
+                <button>Pay Online</button>
+                <button>Cancel Appointment</button>
+              </div>
             </div>
 
           ))
