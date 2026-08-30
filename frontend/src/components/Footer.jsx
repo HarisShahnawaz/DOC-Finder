@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            {/*--------last section required --------- */}
+            {/*--------last section */}
             <div>
                 <hr />
                 <p className='py-5 text-sm text-center'>Copyright 2026@ Doc-Finder - All Right Reserved.</p>
