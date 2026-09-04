@@ -17,3 +17,6 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('Api Working');
 });
+
+
+app.listen(PORT, () => console.log("Server Started ", PORT));
