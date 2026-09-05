@@ -15,7 +15,7 @@ app.use(cors());
 //api endpoints
 
 app.get('/', (req, res) => {
-  res.send('Api Working');
+  res.send('Api Working now');
 });
 
 
