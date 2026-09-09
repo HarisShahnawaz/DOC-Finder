@@ -1,15 +1,9 @@
 import mongoose from "mongoose";
 
-// Connect to MongoDB
 const connectDB = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
-  } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
-    process.exit(1);
-  }
-};
+
+    mongoose.connection.on('connected', ()=> console.log('MongoDB connected'));
+      await mongoose.connect(`${process.env.MONGODB_URI}/docfinder`) 
+}
+
+export default connectDB;
