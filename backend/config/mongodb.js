@@ -7,4 +7,4 @@ const connectDB = async () => {
 }
 
 export default connectDB;
-//comment
+//comment post
