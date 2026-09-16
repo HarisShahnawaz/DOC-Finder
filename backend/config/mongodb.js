@@ -7,4 +7,4 @@ const connectDB = async () => {
 }
 
 export default connectDB;
-//mongodb connexted
+//mongodb connected 
