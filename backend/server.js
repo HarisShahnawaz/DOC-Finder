@@ -18,7 +18,8 @@ app.use(cors());
 
 //api endpoints
 app.use('/api/admin', adminRouter)
-//   localhost:4000/api/admin
+//   localhost:4000/api/admin/add-doctor
+
 app.get('/', (req, res) => {
   res.send('Api Working now');
 });
@@ -26,4 +27,3 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => console.log("Server Started ", PORT));
 
-//this is the backend/server.js file
