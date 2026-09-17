@@ -5,7 +5,7 @@ import dns from "dns";
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const connectDB = async () => {
-    mongoose.connection.on('connected', () => console.log('MongoDB connected'));
+    mongoose.connection.on('connected', () => console.log('Database connected'));
     await mongoose.connect(`${process.env.MONGODB_URI}/docfinder`);
 }
 
