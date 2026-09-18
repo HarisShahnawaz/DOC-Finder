@@ -57,7 +57,7 @@ const addDoctor = async (req, res) => {
    
 
     catch(error){
-        res.status(500).json({ message: "Error adding doctor", error: error.message });
+        
     }
 }
 
