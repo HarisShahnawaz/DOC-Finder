@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { AdminContext } from '../context/AdminContext'
 import axios from 'axios'
 
+
 const Login = () => {
     const [state, setState] = useState('Admin')
     const [email, setEmail] = useState('')
@@ -16,9 +17,9 @@ const Login = () => {
         event.preventDefault()
         try {
             if (state === 'Admin') {
-                const { data } = await axios.post(backendUrl + '/admin/login', { email, password })
+                const { data } = await axios.post(backendUrl + '/api/admin/login', { email, password })
                 if (data.success) {
-                    console.log(data.token)
+                    setAToken(data.token)
                 }
             }
         }
