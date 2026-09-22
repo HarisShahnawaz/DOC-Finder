@@ -6,6 +6,8 @@ import { AdminContext } from './context/AdminContext';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import { Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Admin/Dashboard';
+
 
 
 const App = () => {
@@ -21,7 +23,7 @@ const App = () => {
         <Sidebar />
         <Routes>
           <Route path='/' element={<></>} />
-          <Route path='/admindashboard' element={<></>} />
+          <Route path='/admindashboard' element={<Dashboard />} />
 
 
         </Routes>
