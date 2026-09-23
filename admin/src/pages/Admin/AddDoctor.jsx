@@ -30,10 +30,7 @@ const AddDoctor = () => {
             <input type='text' placeholder='Doctor Email' required />
           </div>
 
-          <div>
-            <p>Doctor Email</p>
-            <input type='text' placeholder='Doctor Email' required />
-          </div>
+
         </div>
 
       </div>
