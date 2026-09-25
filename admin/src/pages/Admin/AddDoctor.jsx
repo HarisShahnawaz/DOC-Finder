@@ -93,8 +93,11 @@ const AddDoctor = () => {
 
         <div>
           <p>About me</p>
-          <textarea type="text" placeholder='write about doctor' />
+          <textarea placeholder='write about doctor' rows={5} />
         </div>
+
+        <button>Add Doctor</button>
+
 
 
       </div>
