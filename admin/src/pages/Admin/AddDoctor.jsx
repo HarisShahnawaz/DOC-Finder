@@ -115,3 +115,5 @@ const AddDoctor = () => {
 }
 
 export default AddDoctor
+
+//add doctor page
