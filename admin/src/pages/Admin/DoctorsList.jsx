@@ -23,7 +23,7 @@ const DoctorsList = () => {
                                 <p>{item.speciality}</p>
                                 <div>
                                     <input type='checkbox' checked={item.available} />
-                                    <p>Available</p>
+                                    <p>Available </p>
                                 </div>
 
                             </div>
@@ -36,3 +36,4 @@ const DoctorsList = () => {
 }
 
 export default DoctorsList
+//comment
