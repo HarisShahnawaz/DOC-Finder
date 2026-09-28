@@ -1,3 +1,4 @@
+import { response } from "express"
 import doctorModel from "../models/doctorModel.js"
 
 
@@ -21,6 +22,8 @@ const changeAvailability = async (req,res) => {
 const doctorList = async () => {
     try {
         const doctors =  await doctorModel.find({}).select(['-password','-email'])
+
+        response.json({success:false , message:error.message})
 
 
     } catch (error) {
