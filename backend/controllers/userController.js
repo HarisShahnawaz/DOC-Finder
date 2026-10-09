@@ -81,7 +81,7 @@ const registerUser = async (req,res) => {
         }
     }
 
-// Api to get user Profile
+// Api to get the user Profile
 
 const getProfile = async (req,res) => {
 
