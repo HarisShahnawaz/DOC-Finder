@@ -29,5 +29,3 @@ const doctorList = async (req, res) => {
 export { changeAvailability, doctorList }
 
 
-
-//backend/controllers/doctorController.js
