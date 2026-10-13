@@ -129,3 +129,5 @@ const updateProfile = async (req,res) => {
 }
 
 export { registerUser, loginUser, getProfile, updateProfile }
+
+// THI FILE IS RECENTLY EDITED.
