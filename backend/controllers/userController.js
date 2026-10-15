@@ -113,7 +113,7 @@ const updateProfile = async (req,res) => {
        }
         await userModel.findByIdAndUpdate(userId, { name, phone, dob, address:JSON.parse(address), gender })
         if(imageFile){
-             //upload image to cloudinary
+             //upload image to cloudinary online
 
              const imageUpload = await cloudinary.uploader.upload(imageFile.path,{resource_type:"image"})
 
