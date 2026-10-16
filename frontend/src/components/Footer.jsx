@@ -28,10 +28,10 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            {/*--------last section */}
+            {/*--------last section  */}
             <div>
                 <hr />
-                <p className='py-5 text-sm text-center'>Copyright 2026@ Doc-Finder - All Right Reserved.</p>
+                <p className='py-5 text-sm text-center'>copyright 2026@ Doc-Finder - All Right Reserved.</p>
             </div>
         </div>
     )
